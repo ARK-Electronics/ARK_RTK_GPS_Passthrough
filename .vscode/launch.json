@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/ARK_RTK_GPS_Passthrough.elf",
+            "name": "Debug (J-Link)",
+            "device": "STM32F412CE",
+            "interface": "swd",
+            "serverArgs": [
+                "-gui"
+            ],
+            "ipAddress": null,
+            "serialNumber": null,
+        }
+    ]
+}
